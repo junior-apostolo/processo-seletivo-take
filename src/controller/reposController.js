@@ -1,14 +1,11 @@
-const { getRepos } = require("../model");
+const { apiService } = require("../service/apiService");
 
 module.exports = {
   async reposController(req, res) {
     try {
-      const apiResponse = await getRepos();
+      const reposList = await apiService();
 
-      return res.json({
-        itemType: 'application/vnd.lime.document-select+json',
-        items: apiResponse,
-      });
+      return res.json({ reposList });
 
     } catch (error) {
       console.log(error)

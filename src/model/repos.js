@@ -1,10 +1,7 @@
-const { apiService } = require("../service/index");
 
 module.exports = {
-  async getRepos() {
+  async getRepos(response) {
     try {
-      const response = await apiService();
-
       const orderSortFilter = response
         .filter(repos => repos.language != null)
         .slice(0, 5)
