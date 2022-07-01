@@ -21,5 +21,10 @@ $ cd processo-seletivo-take
 $ npm install
 $ npm start
 ```
-Para testar a aplicação acesse http://localhost:3000/, na rota GET.
+Para testar a aplicação acesse http://localhost:3000/listRepos, na rota GET.
 
+---
+
+## Deploy
+
+https://api-challenge-chatbot-take.herokuapp.com/listRepos
